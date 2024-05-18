@@ -1,0 +1,17 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+import Gallery from "../components/Gallery.svelte";
+
+const illustrations = await Astro.glob("../assets/illustrations/*");
+---
+
+<BaseLayout title="Illustrations">
+  <Gallery images={illustrations} client:only="svelte" />
+</BaseLayout>
+
+<style>
+  img {
+    max-height: 80vh;
+  }
+</style>

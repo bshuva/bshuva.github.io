@@ -9,7 +9,7 @@ excerpt: A chapter-wise summary of Grounded Theory explaining how?, why? and wha
 
 The First chapters define Grounded theory, it tries to explain how organic and fluid grounded theory for qualitative analysis, which opens its multiple iterations by different people. This one is one of them which carries the initial ideology as it was built by Galser and Strauss.
 
-Through an example of “Margie Arlen '' story it explains how difficult and complicated it becomes to gather qualitative data and analyze it, further compare and create conceptual analysis. Grounded theory gives a path between collecting and analyzing data to construct theories ‘grounded’ in the data itselves. The guideline offers a set of general principles and heuristic devices rather than hard rules.
+Through an example of “Margie Arlen" story it explains how difficult and complicated it becomes to gather qualitative data and analyze it, further compare and create conceptual analysis. Grounded theory gives a path between collecting and analyzing data to construct theories ‘grounded’ in the data itselves. The guideline offers a set of general principles and heuristic devices rather than hard rules.
 
 Grounded theory starts with data. These data are constructed through observations, interactions, and materials that we gather about the topic or setting. Then we begin to separate, sort, and synthesize these data through qualitative coding. Coding means that we attach labels to segments of data that depict what each segment is about. Coding distills data, sorts them, and gives us a handle for making comparisons with other segments of data. By making and coding numerous comparisons, analytic grasp of the data begins to take form. We write preliminary analytic notes called memos about codes and comparisons and any other ideas about data that occur to us. When inevitable questions arise and gaps in our categories appear, we seek data that answer these questions and may fill the gaps. The collected data and the categories become more theoretical because we engage in successive levels of analysis. This work culminates in a 'grounded theory,' or an abstract theoretical understanding of the studied experience.
 
@@ -45,11 +45,13 @@ Glaser remained consistent with his earlier exegesis of the method and thus defi
 ### Constructing Grounded Theory
 
 Grounded theory methods can be viewed as a set of principles and practices, not as prescriptions or packages. It emphasizes flexible guidelines, not methodological rules, recipes, and requirements. Grounded theory methods can complement other approaches to qualitative data analysis, rather than stand in opposition to them.
+
 The research process is not always linear. Grounded theorists stop and write whenever ideas occur to them. Some of our best ideas may occur to us late in the process and may lure us back to the field to gain a deeper view. Quite often, we discover that our work suggests pursuing more than one analytic direction. It can be used with a variety of data collection methods. Grounded theory methods should be treated as tools rather than recipes to follow.
 
 ## Chapter 2: Gathering Rich Data
 
 Most of the time rich data gets beneath the surface of social and subjective life. One must have an inquiring mind, persistence, and innovative data-gathering approaches; it will open a complete new understanding of the whole situation with rich data.
+
 Research begins with finding data. Gathering rich data will give solid material for building a significant analysis. Rich data are detailed, focused, and full. They reveal participants' views, feelings, intentions, and actions as well as the contexts and structures of their lives. Obtaining rich data means seeking 'thick' description, such as writing extensive :fieldnotes of observations, collecting respondents' written personal accounts, and/ or compiling detailed narratives. The kind of data depends on the research topic and access.
 
 ### Thinking About Methods

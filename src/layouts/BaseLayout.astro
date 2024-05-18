@@ -2,12 +2,15 @@
 import "../styles/reset.css";
 import "../styles/global.css";
 
+import "../../public/fonts/Charter/charter.css";
+
 import Nav from "../components/Nav.astro";
+import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
 import { ViewTransitions } from "astro:transitions";
 
-const { title } = Astro.props;
+const { title, image } = Astro.props;
 ---
 
 <html lang="en">
@@ -21,6 +24,7 @@ const { title } = Astro.props;
   </head>
   <body>
     <Nav />
+    <Header {title} {image} />
     <slot />
     <Footer />
   </body>

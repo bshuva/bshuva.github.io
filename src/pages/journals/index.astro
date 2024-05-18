@@ -5,8 +5,7 @@ import { getCollection } from "astro:content";
 const journalEntries = await getCollection("journals");
 ---
 
-<BaseLayout title="Journal | Shuvam Bharti">
-  <h1>Journal</h1>
+<BaseLayout title="Journal">
   <ul>
     {
       journalEntries.map((journalEntry) => (
