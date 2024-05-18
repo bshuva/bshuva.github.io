@@ -24,7 +24,7 @@ const journalEntries = await getCollection("journals");
               style="aspect-ratio: 16/9; object-fit: cover"
             />
             <h3>{projectEntry.data.title}</h3>
-            <ul style="list-style: none; display: flex; gap: 0.5rem;">
+            <ul style="list-style: none; padding: 0; display: flex; gap: 0.5rem; opacity: 0.6;">
               {projectEntry.data.categories.map((category) => (
                 <li>{category}</li>
               ))}
