@@ -12,29 +12,31 @@ const journalEntries = await getCollection("journals");
     style="list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); column-gap: 0.5rem; row-gap: 3rem;"
   >
     {
-      projectEntries.map((projectEntry) => (
-        <li>
-          <a
-            href={`/projects/${projectEntry.slug}`}
-            style="text-decoration: none; color: inherit; display: flex; flex-direction: column; gap: 0.25rem; align-items: center;"
-          >
-            <img
-              src={projectEntry.data.thumbnail}
-              alt={projectEntry.data.title}
-              style="aspect-ratio: 16/9; object-fit: cover"
-            />
-            <h3>{projectEntry.data.title}</h3>
-            <ul style="list-style: none; padding: 0; display: flex; gap: 0.5rem; opacity: 0.6;">
-              {projectEntry.data.categories.map((category) => (
-                <li>{category}</li>
-              ))}
-            </ul>
-          </a>
-          {/* <time datetime={projectEntry.data.date.toISOString()}>
+      projectEntries
+        .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+        .map((projectEntry) => (
+          <li>
+            <a
+              href={`/projects/${projectEntry.slug}`}
+              style="text-decoration: none; color: inherit; display: flex; flex-direction: column; gap: 0.25rem; align-items: center;"
+            >
+              <img
+                src={projectEntry.data.thumbnail}
+                alt={projectEntry.data.title}
+                style="aspect-ratio: 16/9; object-fit: cover"
+              />
+              <h3>{projectEntry.data.title}</h3>
+              <ul style="list-style: none; padding: 0; display: flex; gap: 0.5rem; opacity: 0.6;">
+                {projectEntry.data.categories.map((category) => (
+                  <li>{category}</li>
+                ))}
+              </ul>
+            </a>
+            {/* <time datetime={projectEntry.data.date.toISOString()}>
             {projectEntry.data.date.toDateString()}
           </time> */}
-        </li>
-      ))
+          </li>
+        ))
     }
   </ul>
   <h2>Journal</h2>
