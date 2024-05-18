@@ -1,29 +1,32 @@
 ---
-thumbnail: "/uploads/Dessor/thumbnail.jpg"
-title: Dessor 
+thumbnail: "src/assets/projects/dessor/thumbnail.jpg"
+title: Dessor
 date: 2018-10-09
 categories:
-- Product Design
-- Industrial Design
+  - Product Design
+  - Industrial Design
 
-project_bg_color: ''
-project_fg_color: ''
-
+project_bg_color: ""
+project_fg_color: ""
 ---
 
-![](\uploads\Dessor\thumbnail.jpg)
+![](../../assets/projects/dessor/thumbnail.jpg)
 
-# Project Overview
+## Project Overview
+
 Dessor is a desk organizer explicitly made for design students. This project aimed to learn the fabrication methods and processes involved in mass manufacturing plastic-made products.
 
-# Design Process
+## Design Process
+
 For this particular project, a few things were pre-defined. Like material for the product will be plastic, the organizer should have a lamp connected to it, and the organizer will be for a design student to reduce research time and focus more on the making part.
 Given constraints/limitations, this project went through stages of research involving market and user study, Ideation, and Prototyping with manufacturing considerations for the ideated design.
 
-## Research
+### Research
+
 **Market Study:** For this, I went through multiple existing products in the market. I then analyzed the shapes they use for optimization, different compartments and their forms, materials/tools that are expected to keep in those compartments, and the manufacturing process involved in making them.
 
 **Users study:** In this process, I went through the general arrangement of the design student’s tables. I tried to understand two important things: Firstly, what sort of materials/tools do they generally keep on the table for ease of access, and secondly, if given an organizer, what will be the ideal location to keep it on the table.
+
 <div class="row"; style=" display: flex;
   flex-wrap: wrap; height:35%;
   padding: 2px;">
@@ -48,7 +51,8 @@ Given constraints/limitations, this project went through stages of research invo
 <br>
 <br>
 
-## Ideation
+### Ideation
+
 Quick ideation sketches were made and tested with rough mock-ups from the available ideas based on ease of manufacturing and making.
 
 <div class="row"; style=" display: flex;
@@ -73,8 +77,7 @@ Quick ideation sketches were made and tested with rough mock-ups from the availa
 <br>
 <br>
 
-
-## Prototype
+### Prototype
 
 **Quick mockups:** Mockups were made for all selected ideas to see what works best. These mockups were later dismantled and cut to see how the manufacturing process could be made easier if done in parts or what strategy could be used to make them.
 
@@ -106,8 +109,10 @@ Quick ideation sketches were made and tested with rough mock-ups from the availa
 **Finalized Design:** Once the design was finalized, the product was fabricated using acrylic sheets in 3-parts such that it could be assembled with ultrasonic welding.
 <br>
 
-## Manufactuirng Considrations
+### Manufactuirng Considrations
+
 The organizer is designed such that none of the parts have any undercuts. Hence can be readily injection molded in 3 parts.
+
 <div class="row"; style=" display: flex;
   flex-wrap: wrap; height:50%;
   padding: 2px;">
@@ -134,7 +139,8 @@ The organizer is designed such that none of the parts have any undercuts. Hence 
 <br>
 <br>
 
-## Final Concept
+### Final Concept
+
 <div class="row"; style=" display: flex;
   flex-wrap: wrap; height:50%;
   padding: 2px;">
@@ -160,4 +166,3 @@ The organizer is designed such that none of the parts have any undercuts. Hence 
 </div>
 <br>
 <br>
-

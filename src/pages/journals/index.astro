@@ -1,0 +1,21 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+import { getCollection } from "astro:content";
+const journalEntries = await getCollection("journals");
+---
+
+<BaseLayout title="Journal | Shuvam Bharti">
+  <h1>Journal</h1>
+  <ul>
+    {
+      journalEntries.map((journalEntry) => (
+        <li>
+          <a href={`/journals/${journalEntry.slug}`}>
+            {journalEntry.data.title}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</BaseLayout>

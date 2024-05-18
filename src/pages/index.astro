@@ -3,21 +3,49 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 import { getCollection } from "astro:content";
 const projectEntries = await getCollection("projects");
+const journalEntries = await getCollection("journals");
 ---
 
 <BaseLayout title="Shuvam Bharti">
   <h1>Shuvam Bharti</h1>
   <h2>Projects</h2>
-  <ul>
+  <ul
+    style="list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); column-gap: 0.5rem; row-gap: 3rem;"
+  >
     {
       projectEntries.map((projectEntry) => (
         <li>
-          <a href={`/projects/${projectEntry.slug}`}>
-            {projectEntry.data.title}
+          <a
+            href={`/projects/${projectEntry.slug}`}
+            style="text-decoration: none; color: inherit; display: flex; flex-direction: column; gap: 0.25rem; align-items: center;"
+          >
+            <img
+              src={projectEntry.data.thumbnail}
+              alt={projectEntry.data.title}
+              style="aspect-ratio: 16/9; object-fit: cover"
+            />
+            <h3>{projectEntry.data.title}</h3>
+            <ul style="list-style: none; display: flex; gap: 0.5rem;">
+              {projectEntry.data.categories.map((category) => (
+                <li>{category}</li>
+              ))}
+            </ul>
           </a>
-          <time datetime={projectEntry.data.date.toISOString()}>
+          {/* <time datetime={projectEntry.data.date.toISOString()}>
             {projectEntry.data.date.toDateString()}
-          </time>
+          </time> */}
+        </li>
+      ))
+    }
+  </ul>
+  <h2>Journal</h2>
+  <ul>
+    {
+      journalEntries.map((journalEntry) => (
+        <li>
+          <a href={`/journals/${journalEntry.slug}`}>
+            {journalEntry.data.title}
+          </a>
         </li>
       ))
     }

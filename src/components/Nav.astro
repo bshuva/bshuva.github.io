@@ -1,18 +1,31 @@
-<div class="bar">
-  <div><a href="/">Shuvam Bharti</a></div>
-  <div class="links">
-    <a href="/photography">Photography</a>
-    <a href="/illustration">Illustration</a>
-    <a href="/about">About</a>
-  </div>
-</div>
+<nav>
+  <a href="/">Shuvam Bharti</a>
+  <ul class="links">
+    <li><a href="/journals">Journal</a></li>
+    <li><a href="/photography">Photography</a></li>
+    <li><a href="/illustration">Illustration</a></li>
+    <li><a href="/about">About</a></li>
+  </ul>
+</nav>
 
 <style>
-  .bar {
+  nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: aliceblue;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
   }
 </style>
