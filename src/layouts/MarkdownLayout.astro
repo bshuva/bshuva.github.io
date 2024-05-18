@@ -1,0 +1,20 @@
+---
+import "../styles/markdown.css";
+import BaseLayout from "./BaseLayout.astro";
+
+const { title } = Astro.props;
+---
+
+<BaseLayout {title}>
+  <!-- <h1>{title}</h1> -->
+  <div class="wrapper markdown-body">
+    <slot />
+  </div>
+</BaseLayout>
+
+<style>
+  .wrapper {
+    max-width: 72ch;
+    margin: 0 auto;
+  }
+</style>

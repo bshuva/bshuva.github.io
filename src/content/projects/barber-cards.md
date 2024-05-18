@@ -7,8 +7,6 @@ categories:
   - Semiotics
   - Game design
   - Interaction design
-project_bg_color: ""
-project_fg_color: ""
 ---
 
 ![](../../assets/projects/barber-cards/poster.png)
@@ -22,7 +20,6 @@ These cards were designed for a particular targeted audience but can also be use
 ## Gameplay/Rule-book
 
 ![](../../assets/projects/barber-cards/booklet.png)
-
 ![](../../assets/projects/barber-cards/cardpattern.png)
 
 ## Conclusion

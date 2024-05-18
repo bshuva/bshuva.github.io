@@ -7,8 +7,6 @@ const projectsCollection = defineCollection({
     title: z.string(),
     date: z.date(),
     categories: z.array(z.string()),
-    project_bg_color: z.string(),
-    project_fg_color: z.string(),
   }),
 });
 

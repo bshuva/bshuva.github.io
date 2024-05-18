@@ -6,15 +6,11 @@ categories:
   - Interaction Design
   - UX Design
   - Design Education
-project_bg_color: ""
-project_fg_color: ""
 ---
 
 ![](../../assets/projects/design-education/Dchallangeapp/thumbnail.png)
 
-This project aims to enable high school students to relate more to their learned science
-and mathematical studies and understand their application in real-life
-scenarios. Introducing design to high school students makes it one of the best ways to do so, as it makes students open-minded, exploratory, and critical thinkers.
+This project aims to enable high school students to relate more to their learned science and mathematical studies and understand their application in real-life scenarios. Introducing design to high school students makes it one of the best ways to do so, as it makes students open-minded, exploratory, and critical thinkers.
 
 Providing them with a tool to understand their surroundings and culture, this project tries to create awareness about design thinking among students. It can also play a significant role in finding appropriate solutions to local problems.
 
@@ -34,29 +30,25 @@ After research, I realized that the solutions should explore different platforms
 
 ### 1. Design challenge app
 
-<iframe width="100%" height="480" src="https://www.youtube.com/embed/goMsaDdERKk" title="Design challenge app" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/goMsaDdERKk" title="Design challenge app" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
 
-Daily design challenge application is an idea that tries to get students involved in daily
-step-wise design challenges, in which they not only learn about the design process but
-also know how to go about solving problems on their own and reflecting on them.
-It also helps them to share their design journey on their social platforms.
-This Idea introduces the time constrain to complete a project. It breaks down the design process into further smaller day-to-day steps and presents them as challenges.
+Daily design challenge application is an idea that tries to get students involved in daily step-wise design challenges, in which they not only learn about the design process but also know how to go about solving problems on their own and reflecting on them. It also helps them to share their design journey on their social platforms. This Idea introduces the time constrain to complete a project. It breaks down the design process into further smaller day-to-day steps and presents them as challenges.
 
 ### 2. Design case studies app
 
-<iframe width="100%" height="480" src="https://www.youtube.com/embed/vJFUylyR8n4" title="Design case study app" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/vJFUylyR8n4" title="Design case study app" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
 
 The case study design app helps its user to understand the design process and gives a platform to compare the final product or outcome with an existing design. It enables users to understand real-life design problem solutions. Here they learn to understand the thinking behind a designed object and its cultural and social importance.
 
 ### 3. Science exhibition video
 
-<iframe width="100%" height="480" src="https://www.youtube.com/embed/Nn6bJFv4Ko0" title="Science exibition video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/Nn6bJFv4Ko0" title="Science exibition video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
 
 Make an 8-10 min long video explaining the design process, its application, how students can use it for their science projects, and explore new ideas. The video explains the whole process through (making a paper boat) an example of making it. This solution tries to target students' interests and makes it a strategy to help them do a project.
 
 ### 4. Re-Design app
 
-<iframe width="100%" height="480" src="https://www.youtube.com/embed/olYRulTmkuw" title="Redesign app" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/olYRulTmkuw" title="Redesign app" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
 
 This app helps its user to understand how and why a product is made. It also makes its user more sensitive towards the logic, decision made behind making a product, and understanding the design process.
 
@@ -71,13 +63,9 @@ It was observed that most of the users were interested in the fact that they wil
 
 ## Final concept
 
-"Re-design app" during the concept feedback session, the user appreciated this idea as he said,
-“Oh! I keep on opening things and reassembling them because there are many gadgets
-in my home that don’t work. I might be able to use this to have some fun”. This idea
-conditions the user with the design process and provides a platform to see value in a task
-that was considered as satisfying exploration.
+"Re-design app" during the concept feedback session, the user appreciated this idea as he said, “Oh! I keep on opening things and reassembling them because there are many gadgets in my home that don’t work. I might be able to use this to have some fun”. This idea conditions the user with the design process and provides a platform to see value in a task that was considered as satisfying exploration.
 
-<iframe width="100%" height="480" src="https://www.youtube.com/embed/SzWCyimzyWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/SzWCyimzyWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
 
 ## Concluding thoughts
 
@@ -87,6 +75,6 @@ Though the introduced application is in its early stage, it has a lot of potenti
 
 The solution introduced is one of a kind, but it still cannot be monetized, as lot of work is required to make it a complete product. But as we see, MHRD pushing for the design education in school and due to COVID months of lockdown, which has shown people the possibility of working and learning from home. It can leave a lasting impact on students and teachers. This product can play a significant role in later years to come for school going students.
 
-To Know more about the project contact me through my email- 3shuvam1@gmail.com
+To Know more about the project contact me through my email: [3shuvam1@gmail.com](mailto:3shuvam1@gmail.com)
 
 _This project has been done as my final year project to access the full report [click here](https://drive.google.com/file/d/1j0jCqrKrT1TsAnnbERahqCacBvrmp2cP/view?usp=sharing)._
