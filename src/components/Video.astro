@@ -1,0 +1,17 @@
+---
+const { src, title, aspectRatio } = Astro.props;
+---
+
+<iframe
+  {src}
+  title={title ?? ""}
+  style=`aspect-ratio: ${aspectRatio ?? '16/9'}`
+  allowfullscreen></iframe>
+
+<style>
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+</style>
