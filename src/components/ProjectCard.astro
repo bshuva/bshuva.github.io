@@ -1,0 +1,77 @@
+---
+const { projectEntry, index } = Astro.props;
+---
+
+<li style={index % 3 === 0 ? "grid-column: 1 / -1;" : ""}>
+  <a href={`/projects/${projectEntry.slug}`}>
+    <img
+      src={projectEntry.data.thumbnail}
+      alt={projectEntry.data.title}
+      class:list={[
+        { landscape: index % 3 === 0 },
+        { portrait: index % 3 !== 0 },
+      ]}
+    />
+    <div class="details">
+      <h3>{projectEntry.data.title}</h3>
+      <ul
+        style="list-style: none; padding: 0; display: flex; gap: 0.5rem; opacity: 0.6;"
+      >
+        {projectEntry.data.categories.map((category) => <li>{category}</li>)}
+      </ul>
+    </div>
+  </a>
+  {
+    /* <time datetime={projectEntry.data.date.toISOString()}>
+    {projectEntry.data.date.toDateString()}
+  </time> */
+  }
+</li>
+
+<style>
+  a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: start;
+
+    &:hover {
+      img {
+        scale: 1.02;
+      }
+    }
+  }
+
+  img {
+    object-fit: cover;
+    border-radius: 0.25rem;
+    aspect-ratio: 16/9;
+
+    transition: all 0.2s ease-out;
+
+    @media (min-width: 768px) {
+      &.landscape {
+        aspect-ratio: 2/1;
+      }
+
+      &.portrait {
+        aspect-ratio: 7/8;
+      }
+    }
+  }
+
+  .details {
+    all: inherit;
+    gap: 0;
+    max-width: 95%;
+    text-wrap: pretty;
+
+    h3 {
+      font-size: 1.125rem;
+      padding: 0;
+      margin: 0;
+    }
+  }
+</style>

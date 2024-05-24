@@ -23,7 +23,9 @@ const { title, image } = Astro.props;
   </head>
   <body>
     <Nav />
-    <slot />
+    <div class="width-restrict">
+      <slot />
+    </div>
     <Footer />
   </body>
 </html>
