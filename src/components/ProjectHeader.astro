@@ -1,0 +1,76 @@
+---
+const { title, categories, year, image } = Astro.props;
+---
+
+<header>
+  {image && false && <img src={image} alt={title} />}
+  <h1>{title}</h1>
+  <div class="metadata">
+    {
+      categories && (
+        <div>
+          <span>Categories</span>
+          <ul class="categories">
+            {categories.map((category) => (
+              <li>{category}</li>
+            ))}
+          </ul>
+        </div>
+      )
+    }
+    {
+      year && (
+        <div>
+          <span>Year</span>
+          <time datetime={year.toISOString()}>{year.getFullYear()}</time>
+        </div>
+      )
+    }
+  </div>
+</header>
+
+<style>
+  header {
+    /* width: 100%; */
+    max-width: 72ch;
+    margin-inline: auto;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  img {
+    height: 100%;
+    object-fit: fill;
+    aspect-ratio: 4/3;
+  }
+
+  .metadata {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+
+      > span {
+        font-size: small;
+        opacity: 0.6;
+      }
+    }
+  }
+
+  ul.categories {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 0.25rem;
+
+    li:not(:last-child)::after {
+      content: ",";
+    }
+  }
+</style>

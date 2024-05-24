@@ -2,11 +2,14 @@
 import "../styles/gh-markdown.css";
 import BaseLayout from "./BaseLayout.astro";
 
-const { title, image } = Astro.props;
+import ProjectHeader from "../components/ProjectHeader.astro";
+
+const { title, categories, year, image } = Astro.props;
 ---
 
-<BaseLayout {title} {image}>
-  <article class="NOmarkdown-body">
+<BaseLayout {title}>
+  <ProjectHeader {title} {categories} {year} {image} />
+  <article class="markdown-body">
     <slot />
   </article>
 </BaseLayout>
