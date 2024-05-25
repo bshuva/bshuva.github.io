@@ -1,4 +1,5 @@
 ---
+import PageHeader from "../../components/PageHeader.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
 import { getCollection } from "astro:content";
@@ -6,6 +7,7 @@ const journalEntries = await getCollection("journals");
 ---
 
 <BaseLayout title="Journal">
+  <PageHeader title="Journal" />
   <ul>
     {
       journalEntries.map((journalEntry) => (

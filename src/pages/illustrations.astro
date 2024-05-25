@@ -2,11 +2,13 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 import Gallery from "../components/Gallery.svelte";
+import PageHeader from "../components/PageHeader.astro";
 
 const illustrations = await Astro.glob("../assets/illustrations/*");
 ---
 
 <BaseLayout title="Illustrations">
+  <PageHeader title="Illustrations" />
   <Gallery images={illustrations} client:only="svelte" />
 </BaseLayout>
 

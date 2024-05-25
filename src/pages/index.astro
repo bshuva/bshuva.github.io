@@ -1,4 +1,5 @@
 ---
+import PageHeader from "../components/PageHeader.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
@@ -8,19 +9,10 @@ const journalEntries = await getCollection("journals");
 ---
 
 <BaseLayout title="Shuvam Bharti">
-  <header
-    style="max-width: 1024px; margin-inline: auto; height: 40vh; display: flex; flex-direction: column; gap: 1.5rem; justify-content: center; align-items: center;"
-  >
-    <h1 style="max-width: 15ch;text-align: center;">
-      Simple. Creative. Aesthetics.
-    </h1>
-    <p
-      style="max-width: 50ch; text-align: center; font-size: 1.2rem; opacity: 0.8"
-    >
-      Hi there, I'm a designer, humanitarian and technology enthusiast. I like
-      to reimagine, collaborate and have fun.
-    </p>
-  </header>
+  <PageHeader
+    title="Simple. Creative. Aesthetics."
+    description="Hi there, I'm a designer, humanitarian and technology enthusiast. I like to reimagine, collaborate and have fun."
+  />
   <h2 style="display: none">Projects</h2>
   <ul class="projects">
     {
