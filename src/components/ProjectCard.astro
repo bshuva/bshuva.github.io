@@ -14,9 +14,7 @@ const { projectEntry, index } = Astro.props;
     />
     <div class="details">
       <h3>{projectEntry.data.title}</h3>
-      <ul
-        style="list-style: none; padding: 0; display: flex; gap: 0.5rem; opacity: 0.6;"
-      >
+      <ul class="categories">
         {projectEntry.data.categories.map((category) => <li>{category}</li>)}
       </ul>
     </div>
@@ -45,6 +43,7 @@ const { projectEntry, index } = Astro.props;
   }
 
   img {
+    width: 100%;
     object-fit: cover;
     border-radius: 0.25rem;
     aspect-ratio: 16/9;
@@ -73,5 +72,16 @@ const { projectEntry, index } = Astro.props;
       padding: 0;
       margin: 0;
     }
+  }
+
+  .categories {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 0.25rem;
+    opacity: 0.6;
+
+    & > li:not(:last-child)::after {
+      content: " · ";
   }
 </style>
