@@ -1,19 +1,51 @@
 <footer>
-  <p>Shuvam Bharti @ 2024</p>
+  <div class="wrapper width-restrict">
+    <div class="contact">
+      <h2>Get in touch</h2>
+      <ul>
+        <li>
+          <a href="mailto:3shuvam1@gmail.com">3shuvam1@gmail.com</a>
+        </li>
+        <li>
+          <a href="">LinkedIn</a>
+        </li>
+        <li>
+          <a href="">Instagram</a>
+        </li>
+      </ul>
+    </div>
+    <p>Shuvam Bharti © 2024</p>
+  </div>
 </footer>
 
 <style>
   footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40vh;
     width: 100%;
     background-color: color-mix(
       in srgb,
-      var(--surface-color) 90%,
+      var(--surface-color) 97.5%,
       var(--text-color)
     );
     margin-top: 20vh;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 10vh;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    & a {
+      text-decoration: none;
+      color: inherit;
+    }
   }
 </style>
