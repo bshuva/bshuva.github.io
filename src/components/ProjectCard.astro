@@ -3,7 +3,7 @@ const { projectEntry, index } = Astro.props;
 ---
 
 <li style={index % 3 === 0 ? "grid-column: 1 / -1;" : ""}>
-  <a href={`/projects/${projectEntry.slug}`}>
+  <a href=`/projects/${projectEntry.slug}`>
     <img
       src={projectEntry.data.thumbnail}
       alt={projectEntry.data.title}

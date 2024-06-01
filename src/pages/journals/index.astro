@@ -1,4 +1,5 @@
 ---
+import JournalCard from "../../components/JournalCard.astro";
 import PageHeader from "../../components/PageHeader.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
@@ -9,14 +10,13 @@ const journalEntries = await getCollection("journals");
 <BaseLayout title="Journal">
   <PageHeader title="Journal" />
   <ul>
-    {
-      journalEntries.map((journalEntry) => (
-        <li>
-          <a href={`/journals/${journalEntry.slug}`}>
-            {journalEntry.data.title}
-          </a>
-        </li>
-      ))
-    }
+    {journalEntries.map((journalEntry) => <JournalCard {journalEntry} />)}
   </ul>
 </BaseLayout>
+
+<style>
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+</style>

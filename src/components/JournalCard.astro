@@ -1,0 +1,16 @@
+---
+const { journalEntry } = Astro.props;
+---
+
+<li>
+  <a href=`/journals/${journalEntry.slug}`>{journalEntry.data.title}</a>
+</li>
+
+<style>
+  a {
+    font-family: var(--serif);
+    font-size: 2rem;
+    text-decoration: none;
+    color: inherit;
+  }
+</style>
