@@ -1,20 +1,30 @@
+---
+import { Image } from "astro:assets";
+import qr from "../assets/resume-qr.png";
+---
+
 <footer>
   <div class="wrapper width-restrict">
-    <div class="contact">
+    <div class="first-block">
       <h2>Get in touch</h2>
+      <Image src={qr} alt="resume" style="aspect-ratio: 1/1; width: 80px;" />
+    </div>
+    <div class="second-block">
       <ul>
         <li>
           <a href="mailto:3shuvam1@gmail.com">3shuvam1@gmail.com</a>
         </li>
         <li>
-          <a href="">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/shuvam-bharti-0379582a2/">
+            LinkedIn
+          </a>
         </li>
         <li>
-          <a href="">Instagram</a>
+          <a href="https://www.instagram.com/bshuva_">Instagram</a>
         </li>
       </ul>
+      <p>Shuvam Bharti © 2024</p>
     </div>
-    <p>Shuvam Bharti © 2024</p>
   </div>
 </footer>
 
@@ -31,9 +41,29 @@
 
   .wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding-block: 10vh;
+    padding-block: 8vh;
+    gap: 1rem;
+  }
+
+  .first-block {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: end;
+  }
+
+  .second-block {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
   }
 
   ul {
