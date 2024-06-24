@@ -9,5 +9,6 @@ export default defineConfig({
   integrations: [svelte(), mdx()],
   redirects: {
     "/projects": "/"
-  }
-});
+  },
+  site: 'https://bshuva.net',
+})
