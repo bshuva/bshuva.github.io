@@ -1,9 +1,29 @@
 ---
 import PageHeader from "../components/PageHeader.astro";
+import Gallery from "../components/Gallery.svelte";
 import BaseLayout from "../layouts/BaseLayout.astro";
+
+const photography = await Astro.glob("../assets/photography/*");
 ---
 
 <BaseLayout title="Photography">
   <PageHeader title="Photography" />
-  <p>Photo gallery goes here</p>
+  <Gallery images={photography} client:only="svelte" />
+
 </BaseLayout>
+
+<style>
+  img {
+    max-height: 100vh;
+
+  }
+</style>
+
+
+
+---
+
+
+
+
+
