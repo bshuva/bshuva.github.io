@@ -8,15 +8,15 @@ const journalEntries = await getCollection("journals");
 ---
 
 <BaseLayout title="Journal">
-  <PageHeader title="Journal" />
-  <ul>
-    {journalEntries.map((journalEntry) => <JournalCard {journalEntry} />)}
-  </ul>
+    <PageHeader title="Journal" />
+    <ul>
+        {journalEntries.map((journalEntry) => <JournalCard {journalEntry} />)}
+    </ul>
 </BaseLayout>
 
 <style>
-  ul {
-    list-style: none;
-    padding: 0;
-  }
+    ul {
+        list-style: none;
+        padding: 0;
+    }
 </style>

@@ -6,10 +6,7 @@ import ProjectCard from "../components/ProjectCard.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 import { getCollection } from "astro:content";
-const uxProjectEntries = await getCollection("uxProjects");
 const otherProjectEntries = await getCollection("otherProjects");
-const projectEntries = [...uxProjectEntries, ...otherProjectEntries];
-
 const journalEntries = await getCollection("journals");
 ---
 
@@ -22,7 +19,7 @@ const journalEntries = await getCollection("journals");
         <h2>Projects</h2>
         <ul>
             {
-                projectEntries
+                otherProjectEntries
                     .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
                     .map((projectEntry, index) => <ProjectCard {projectEntry} {index} />)
             }

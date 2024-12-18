@@ -9,16 +9,11 @@ const url = Astro.url.pathname;
     </h1>
     {description && <p>{description}</p>}
     {
-        ["/", "/ux", "/creative"].includes(url) && (
+        ["/", "/ux"].includes(url) && (
             <ul id="projects-filter">
                 <li>
                     <a href="/" class={url === "/" ? "active" : ""}>
-                        All
-                    </a>
-                </li>
-                <li>
-                    <a href="/creative" class={url === "/creative" ? "active" : ""}>
-                        Creative
+                        Other
                     </a>
                 </li>
                 <li>
@@ -56,34 +51,24 @@ const url = Astro.url.pathname;
     }
 
     #projects-filter {
-        height: fit-content;
-        width: fit-content;
+        width: 100%;
         margin-inline: auto;
 
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 0rem;
-        padding: 1rem 0.5rem;
-
-        background-color: color-mix(in srgb, var(--text-color) 15%, transparent);
-        border-radius: 10rem;
+        gap: 1rem;
+        padding: 1rem;
 
         list-style: none;
 
         & a {
             text-decoration: none;
             color: inherit;
-            padding: 0.5rem 1rem;
-            opacity: 0.8;
-
-            line-height: 1;
-            border-radius: 10rem;
 
             &.active {
-                opacity: 1;
                 font-weight: bold;
-                background-color: var(--surface-color);
+                color: red;
             }
         }
     }

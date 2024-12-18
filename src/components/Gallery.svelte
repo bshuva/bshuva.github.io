@@ -1,54 +1,57 @@
-<script>
-  import BiggerPicture from "bigger-picture";
-  import "bigger-picture/css";
+<script lang="ts">
+    import { preventDefault } from "svelte/legacy";
 
-  import { onMount } from "svelte";
+    import BiggerPicture from "bigger-picture";
+    import "bigger-picture/css";
 
-  export let images;
+    import { onMount } from "svelte";
 
-  let biggerPicture;
-  let imageLinks;
+    let { images } = $props();
 
-  onMount(() => {
-    biggerPicture = new BiggerPicture({
-      target: document.body,
+    let biggerPicture;
+    let imageLinks;
+
+    onMount(() => {
+        biggerPicture = new BiggerPicture({
+            target: document.body,
+        });
+
+        imageLinks = document.querySelectorAll(".gallery-link");
     });
 
-    imageLinks = document.querySelectorAll(".gallery-link");
-  });
-
-  function openGallery(event) {
-    biggerPicture.open({
-      items: imageLinks,
-      el: event.currentTarget,
-    });
-  }
+    function openGallery(event) {
+        biggerPicture.open({
+            items: imageLinks,
+            el: event.currentTarget,
+        });
+    }
 </script>
 
 <div id="gallery">
-  {#each images as image}
-    <a
-      class="gallery-link"
-      href={image.default.src}
-      data-img={image.default.src}
-      data-thumb={image.default.src}
-      data-width={image.default.width}
-      data-height={image.default.height}
-      on:click|preventDefault={openGallery}
-    >
-      <img src={image.default.src} />
-    </a>
-  {/each}
+    {#each images as image}
+        <a
+            class="gallery-link"
+            href={image.default.src}
+            data-img={image.default.src}
+            data-thumb={image.default.src}
+            data-width={image.default.width}
+            data-height={image.default.height}
+            onclick={preventDefault(openGallery)}
+        >
+            <img src={image.default.src} />
+        </a>
+    {/each}
 </div>
 
 <style>
-  #gallery {
-    display: flex;
-    align-items: end;
-    flex-wrap: wrap;
-  }
+    #gallery {
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 
-  img {
-    max-height: 40vh;
-  }
+    img {
+        max-height: 40vh;
+    }
 </style>
