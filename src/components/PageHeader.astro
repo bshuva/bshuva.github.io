@@ -11,7 +11,7 @@ console.log(url);
     </h1>
     {description && <p>{description}</p>}
     {
-        ["/", "ux/", "creative/"].includes(url) && (
+        ["/", "/ux/", "/creative/"].includes(url) && (
             <ul id="projects-filter">
                 <li>
                     <a href="/" class={url === "/" ? "active" : ""}>
