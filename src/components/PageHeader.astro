@@ -11,7 +11,11 @@ console.log(url);
     </h1>
     {description && <p>{description}</p>}
     {
-        ["/", "/ux", "/creative"].includes(url) && (
+        [
+            "https://bshuva.github.io/",
+            "https://bshuva.github.io//ux",
+            "https://bshuva.github.io//creative",
+        ].includes(url) && (
             <ul id="projects-filter">
                 <li>
                     <a href="/" class={url === "/" ? "active" : ""}>
