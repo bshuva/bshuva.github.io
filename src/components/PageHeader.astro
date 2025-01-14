@@ -1,6 +1,8 @@
 ---
 const { title, description } = Astro.props;
 const url = Astro.url.pathname;
+
+console.log(url);
 ---
 
 <header>
@@ -17,7 +19,10 @@ const url = Astro.url.pathname;
                     </a>
                 </li>
                 <li>
-                    <a href="/creative" class={url === "/creative" ? "active" : ""}>
+                    <a
+                        href="/creative"
+                        class={url === "/creative" ? "active" : ""}
+                    >
                         Creative
                     </a>
                 </li>
@@ -66,7 +71,11 @@ const url = Astro.url.pathname;
         gap: 0rem;
         padding: 1rem 0.5rem;
 
-        background-color: color-mix(in srgb, var(--text-color) 15%, transparent);
+        background-color: color-mix(
+            in srgb,
+            var(--text-color) 15%,
+            transparent
+        );
         border-radius: 10rem;
 
         list-style: none;
